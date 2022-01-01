@@ -14,7 +14,6 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #fff; /* font color*/
-  background-color: #1C1717;
 
 }
 
