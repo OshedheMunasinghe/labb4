@@ -1,31 +1,53 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <!--    <HelloWorld msg="Welcome to Your Vue.js App" />-->
-    <p> Here come the first data</p>
-    <div v-for="e in coffee" :key="e.id">
-      {{ e.title }}
-    </div>
-    <div>
-      <b-card
-        title="Card Title"
-        img-src="https://picsum.photos/600/300/?image=25"
-        img-alt="Image"
-        img-top
-        tag="article"
-        style="max-width: 20rem;"
-        class="mb-2"
-      >
-        <b-card-text>
-          Some quick example text to build on the card title and make up the bulk of the card's content.
-        </b-card-text>
+  <div
+    class="home"
+    style="
+      justify-content: center;
+   display: flex;
+  position: absolute;
+  left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
 
-        <b-button href="#" variant="primary">Go somewhere</b-button>
-      </b-card>
+   ">
+    <!--    <p> Here come the first data</p>
+        <div v-for="e in coffee" :key="e.id">
+          {{ e.title }}
+        </div>-->
+    <!--    * gör den till en komponent card -->
+    <div style="
+    /*background-color: white;*/
+">
+      <!--      todo: this image needs to fix random and then fix photoshop-->
+      <img
+        src="../assets/backgroundPic.jpg"
+        width="1040"
+        height="623"
+        style="overflow: hidden;   width: 1040px;
+     height: 623px;
+     box-shadow: 7px 13px 5px -2px rgba(0,0,0,0.29);
+     border-radius: 18px;
+     position: relative;
+     overflow: auto;
+
+
+" />
+      <!--      TODO: make it own component but before that, make sure props working?-->
+      <div style="
+      width: 403px;
+      height: 623px;
+      position: absolute;
+  bottom: 100px;
+  right: 0px;
+  top: 0px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+   background-color: rgba(255,255,255,0.2);
+  backdrop-filter: saturate(180%) blur(10px);
+"
+      />
     </div>
-    <b-button>Button</b-button>
   </div>
-
 </template>
 
 <script>
@@ -33,6 +55,7 @@
 // import HelloWorld from "@/components/HelloWorld.vue";
 // import EventService from "@/API/DataAPI";
 // import { mapMutations } from 'vuex';
+import backgroundPic from "@/assets/backgroundPic.jpg";
 
 export default {
   name: "Home",
@@ -40,7 +63,9 @@ export default {
     // HelloWorld,
   },
   data() {
-    return {};
+    return {
+      bakgrpic: backgroundPic
+    };
   },
   computed: {
     coffee() {

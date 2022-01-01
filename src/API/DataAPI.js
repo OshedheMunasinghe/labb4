@@ -16,6 +16,7 @@ export default {
   },
 };
 */
+//TODO: skapa Wine i en ny fil
 
 export default () => {
   return axios.create({
@@ -23,7 +24,7 @@ export default () => {
     withCredentials: false,
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/json",
-    },
+      "Content-Type": "application/json"
+    }
   });
 };

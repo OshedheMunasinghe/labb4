@@ -1,6 +1,5 @@
 import { createStore } from "vuex";
 import EventService from "@/API/DataAPI";
-
 export default createStore({
   state: {
     coffee: null
@@ -12,8 +11,8 @@ export default createStore({
   },
   actions: {
     async brewCoffee({ commit }) {
-      let response = await  EventService().get('/hot')
-      commit('setCoffeAPI', response.data)
+      let response = await EventService().get("/hot");
+      commit("setCoffeAPI", response.data);
     }
   }
   ,
