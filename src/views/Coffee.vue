@@ -10,13 +10,18 @@
       transform: translate(-50%, -50%);
     "
   >
+    <div style="transform: scale(0.8);">
+      <img src="../assets/Coffee/rotatecoffe.png"
+           style="margin-right: -2800px;
+           margin-top: -70px;
+             transform: rotate(-10deg);
+"/>
+    </div>
     <!--    * gör den till en komponent card -->
     <div>
       <!--      todo: this image needs to fix random and then fix photoshop-->
       <img
         src="../assets/Coffee/coffeeBackgrPic/coffeeBackgrPic0.jpg"
-        width="1040"
-        height="623"
         style="
           overflow: hidden;
           width: 1040px;
@@ -132,6 +137,14 @@
       <!--        * END WHITE BLUR BOX-->
     </div>
   </div>
+  <img src="../assets/Coffee/coffeBeanBottom.png"
+       style="
+       position: relative;
+       transform: scale(0.6);
+       margin-right: 1050px;
+       margin-top: 420px;
+" />
+<!--  <div style="width: 800px; height: 800px; background-color: orange; margin-left: 100px; position: relative"/>-->
 </template>
 
 <script>
