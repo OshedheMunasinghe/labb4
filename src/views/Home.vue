@@ -14,7 +14,7 @@
     <div>
       <!--      todo: this image needs to fix random and then fix photoshop-->
       <img
-        src="@/assets/coffeeBackgrPic/coffeeBackgrPic0.jpg"
+        src="../assets/Coffee/coffeeBackgrPic/coffeeBackgrPic0.jpg"
         width="1040"
         height="623"
         style="
@@ -72,26 +72,61 @@
             </p>
           </div>
         </div>
+        <!--        * BREAK LINE -->
         <hr style="margin-top: 400px" />
 
+        <!--        FLEXBOX PARENT -->
         <div
           style="
-            background-color: black;
-            width: 77px;
-            height: 222px;
-            border-bottom-right-radius: 18px;
-            opacity: 60%;
-            margin-left: 326px;
-            margin-top: -15px;
-            align-items: center;
             display: flex;
+            flex-direction: row;
+            justify-content: space-between;
           "
         >
-          <!--          TODO: ANIMATION WHEN MOVE HOVERING -->
-          <img
-            src="@/assets/icons/wineIcon.png"
-            style="display: flex; position: absolute; right: 8px"
-          />
+          <div style="margin-left: 24px; ">
+            <p style="font-family: Gadugi; font-weight: bold; font-size: 14px;">
+              INGREDIENTS
+            </p>
+            <b-button
+              pill
+              variant="outline-secondary"
+              style="
+              color: white;
+              border-color: white;
+              font-family: Gadugi;
+
+"
+              size="sm">coffee
+            </b-button>
+          </div>
+
+
+          <!-- * button to wine -->
+          <!--        todo make it component -->
+          <div
+            style="
+              border-bottom-right-radius: 18px;
+              align-items: center;
+              display: flex;
+            "
+          >
+
+            <!--            * ICON BUTTON -->
+            <!--          TODO: ANIMATION WHEN MOVE HOVERING -->
+            <div
+              style="
+                width: 77px;
+                height: 222px;
+                background-color: black;
+                opacity: 60%;
+                margin-top: -15px;
+                border-bottom-right-radius: 18px;
+              "
+            >
+              <img src="@/assets/icons/wineIcon.png" style="margin-top: 80px" />
+            </div>
+            <!--            END ICON BUTTON-->
+          </div>
         </div>
       </div>
       <!--        * END WHITE BLUR BOX-->
