@@ -144,7 +144,12 @@
        margin-right: 1050px;
        margin-top: 420px;
 " />
-<!--  <div style="width: 800px; height: 800px; background-color: orange; margin-left: 100px; position: relative"/>-->
+<!--  ! TESTING PAGINATION -->
+  <div style="width: 100px; height: 100px; background-color: orange; margin-left: 800px; ">
+    <div v-for="e in coffee" :key="e.id" style="color: #42b983">
+      {{ e.title }}
+    </div>
+    </div>
 </template>
 
 <script>
