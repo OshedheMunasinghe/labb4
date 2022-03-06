@@ -1,19 +1,15 @@
 <template>
-<!--  <div id="nav">
-    <router-link to="/">Home</router-link>
-    |
-    <router-link to="/about">About</router-link>
-  </div>-->
   <router-view />
 </template>
+
 
 <style>
 * {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #fff; /* font color*/
+  text-align: center; /* TODO denna behöver inte vara med!  */
+  color: #000; /* font color*/
 
 }
 

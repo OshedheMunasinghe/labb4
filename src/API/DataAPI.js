@@ -6,12 +6,15 @@ const apiClient = axios.create({
   withCredentials: false,
   headers: {
     Accept: "application/json",
-    "Content-Type": "application/json",
-  },
+    "Content-Type": "application/json"
+  }
 });
 
 export default {
-  getCoffee() {
-    return apiClient.get('/hot');
+  getHotCoffee() {
+    return apiClient.get("/hot");
   },
+  getIcedCoffee() {
+    return apiClient.get("/iced");
+  }
 };

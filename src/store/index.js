@@ -3,20 +3,20 @@ import EventService from "@/API/DataAPI";
 
 export default createStore({
   state: {
-    coffee: null,
+    coffee: null
   },
   mutations: {
     setCoffeAPI(state, coffee) {
       state.coffee = coffee;
-    },
+    }
   },
   actions: {
     async brewCoffee({ commit }) {
-      let response = EventService.getCoffee();
+      let response = EventService.getHotCoffee();
       {
         commit("setCoffeAPI", (await response).data);
       }
-    },
+    }
   },
-  modules: {},
+  modules: {}
 });
