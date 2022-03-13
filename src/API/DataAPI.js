@@ -9,7 +9,7 @@ const apiClient = axios.create({
     "Content-Type": "application/json"
   }
 });
-
+//TODO make router to iceCoffee
 export default {
   getHotCoffee() {
     return apiClient.get("/hot");
