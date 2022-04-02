@@ -1,13 +1,14 @@
 <template>
-  <div>
+  <div v-if="hotCoffee">
     <div id="flex-box">
       <h1>Hot Coffees</h1>
-      <input v-if="hotCoffee" id="search-box" v-model="search" placeholder="search hot coffee" type="text">
+      <input id="search-box" v-model="search" placeholder="search hot coffee" type="text">
     </div>
     <div id="flex-card">
-      <HotCoffeeCard v-if="filterHotCoffee" v-for="htcoffee in filterHotCoffee" :key="htcoffee.id" :coffee="htcoffee" />
+      <HotCoffeeCard v-for="htcoffee in filterHotCoffee" :key="htcoffee.id" :coffee="htcoffee" />
     </div>
   </div>
+  <h1 v-else> 404 no hot drinks for you :'( </h1>
 </template>
 <script>
 
