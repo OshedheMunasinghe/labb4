@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/labb4/',
+  publicPath: '',
   pwa: {
     manifestOptions: {
       background_color: '#238f29'

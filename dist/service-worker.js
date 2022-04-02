@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.53d5f40e9bccb450e81294d643f9e016.js"
+  "/precache-manifest.2235b28145e46fe35e332d37a96071f3.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "labb4"});
@@ -32,5 +32,3 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
-
-workbox.routing.registerRoute("https://api.sampleapis.com/coffee", new workbox.strategies.NetworkFirst({ "networkTimeoutSeconds":5, plugins: [] }), 'GET');
