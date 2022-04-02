@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <router-link to="/">Home</router-link>
+  <div id="nav">
+    <router-link to="/">HOME</router-link>
   </div>
   <router-view />
 </template>
@@ -11,25 +11,23 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center; /* TODO denna behöver inte vara med!  */
-  color: #000; /* font color*/
-
+  color: #000;
+  background-color: #08340a;
 }
 
 #nav {
   padding: 30px;
+  text-align: center;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #d5dad5;
+  font-size: 30px;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #ffba89;
 }
 
-h4 {
-  font-size: 20px;
-}
 </style>
