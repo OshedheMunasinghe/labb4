@@ -1,15 +1,14 @@
 <template>
   <div class="home" id="home">
-
     <div id="flex-box">
-            <router-link to="/ice">
-              <b-img thumbnail :src="require('@/assets/coldDrink.jpg')" rounded class="image-box">
-              </b-img>
-            </router-link>
-            <router-link to="/hot">
-              <b-img thumbnail :src="require('@/assets/hotDrink.jpg')" rounded class="image-box">
-              </b-img>
-            </router-link>
+      <router-link to="/ice">
+        <b-img :src="require('@/assets/coldDrink.jpg')" class="image-box" rounded thumbnail>
+        </b-img>
+      </router-link>
+      <router-link to="/hot">
+        <b-img :src="require('@/assets/hotDrink.jpg')" class="image-box" rounded thumbnail>
+        </b-img>
+      </router-link>
     </div>
   </div>
 </template>

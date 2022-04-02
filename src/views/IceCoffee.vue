@@ -1,10 +1,11 @@
 <template>
-  <HotCoffeeCard v-if="filterHotCoffee" v-for="icCoffee in filterHotCoffee" :key="icCoffee.id" :htCoff="icCoffee" />
+  <HotCoffeeCard v-for="icCoffee in filterHotCoffee" v-if="filterHotCoffee" :key="icCoffee.id" :coffee="icCoffee" />
 </template>
 
 <script>
 import HotCoffeeCard from "@/views/component/CoffeeCard";
 import DataAPI from "@/API/DataAPI";
+
 export default {
   name: "IcedCoffee",
   components: { HotCoffeeCard },
