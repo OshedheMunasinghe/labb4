@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!--    <b-img id="image" :src="require('@/assets/coldDrink.jpg')" rounded thumbnail />-->
     <b-img id="image" :src="selectedImage" rounded thumbnail />
     <h3>{{ coffee.title }}</h3>
     <p id="description-style">{{ coffee.description }}</p>

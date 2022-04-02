@@ -33,7 +33,7 @@ export default {
   created() {
     DataAPI.getHotCoffee()
       .then(response => {
-        this.hotCoffee = response.data; //den kommer lagra i htcoffee från api
+        this.hotCoffee = response.data;
       })
       .catch(error => {
         console.log(error);
