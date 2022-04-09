@@ -1,7 +1,7 @@
 <template>
   <div v-if="iceCoffee">
     <div id="flex-box">
-      <h1>Hot Coffees</h1>
+      <h1>Ice Coffees</h1>
       <input id="search-box" v-model="search" placeholder="search ice drinks" type="text">
     </div>
     <div id="flex-card">
